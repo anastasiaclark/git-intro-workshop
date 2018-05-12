@@ -12,10 +12,10 @@ Check out his Ted Talk:  [The Mind Behind Linux](https://www.ted.com/talks/linus
 ## GitHub    --[browser]
 **GitHub** is an online facility where projects are made available for others to access and make contributions. Projects are maintained and managed in **repositories**. Github allows you to have a backup of your files *away* fom your local machine in these repositories. It has a visual interface to navigate your repositories, and it allows other people to be able to view your them. Peolpe often refer to the repositories as **repos**. 
 
-In addition, Github includes some very nice tools for software projects, like Markdown rendering, issue tracker and wiki tools, and the ability to “fork” a project to make your own independent copy of it for development.
+In addition, Github includes some very nice tools for software projects, like Markdown rendering, issue tracker and wiki tools, and the ability to “fork” a project to make your own independent copy of it for development. This repository is indeed, a fork from https://github.com/reshama/git-intro-workshop5-pyladies, which I slightly modified ror the purpose of my class.
 
 GitHub is also social. 
-Just like a social networking site, individuals who participate on GitHub have profiles that share details about who they are. Individuals can **watch** repositories, follow other users’ activities, and interact with their peers. 
+Just like a social networking site, individuals who participate on GitHub have profiles that share details about who they are. Github users can **watch** repositories, follow other users’ activities, and interact with their peers. 
 
 Github is a hub for open source development and you too as a github user can contribute to an open source project by opening an  **issue** if you encounter a bug in a software. 
 

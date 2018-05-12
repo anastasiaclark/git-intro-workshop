@@ -19,8 +19,7 @@ task:  end changes from local computer to GitHub repo (sync repos)
 
 ### `git add` a file
 This sets a file for staging:  
-`git add print_name.py`  
-
+ 
 >my example  
 ```Anastasias-MBP:git_intro anastasiaclark$ git add print_name.py
 ```

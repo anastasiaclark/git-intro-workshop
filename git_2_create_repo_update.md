@@ -25,46 +25,29 @@
 
 ### Go to directory on local computer  
 For me, it is: 
-`/Users/reshamashaikh/git_work`  
-
->my example
-```bash
-~/git_work  master ✗                                                                  ◒  
-▶ pwd
-/Users/reshamashaikh/git_work
-```
+`https://github.com/anastasiaclark/git_intro`  
 
 #### Clone repo
 `git clone https://github.com/reshamas/starting_git.git`  
 
 >my example  
-```bash
-~/git_work  master ✗                                                                  ◒  
-▶ git clone https://github.com/reshamas/starting_git.git
-Cloning into 'starting_git'...
-remote: Counting objects: 15, done.
-remote: Compressing objects: 100% (10/10), done.
-remote: Total 15 (delta 1), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (15/15), done.
-Checking connectivity... done.
+```                                                               ◒  
+▶ Cloning into 'git_intro'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Anastasias-MBP:~ anastasiaclark$
 ```
 
 ### `cd` into cloned repo
+```bash
+Anastasias-MBP:git_intro anastasiaclark$ cd git_intro/
+Anastasias-MBP:git_intro anastasiaclark$```
 
 ```bash
-▶ pwd
-/Users/reshamashaikh/git_work/starting_git
-
-▶ ls
-total 0
-drwxr-xr-x  7   238 Nov 14 11:29 data-science-from-scratch
-drwxr-xr-x  6   204 Nov 14 11:48 starting_git
-
-~/git_work  master ✗                                                                  ◒  
-▶ cd starting_git 
-
-~/git_work/starting_git  master ✔                                                    6m  
-▶ 
+Anastasias-MBP:git_intro anastasiaclark$ ls 
+README.md	holiday.md
+Anastasias-MBP:git_intro anastasiaclark$ 
 ```
 
 ### Check out the remote
@@ -74,42 +57,31 @@ Note:
 
 >my example  
 ```bash
-▶ git remote -v
-origin	https://github.com/reshamas/starting_git.git (fetch)
-origin	https://github.com/reshamas/starting_git.git (push)
+Anastasias-MBP:git_intro anastasiaclark$  git remote -v
+origin	https://github.com/anastasiaclark/git_intro.git (fetch)
+origin	https://github.com/anastasiaclark/git_intro.git (push)
 ```
 
 ### We can 'pull' updates from GitHub version
 ```bash
-▶ git pull
+Anastasias-MBP:git_intro anastasiaclark$  git pull
 Already up-to-date.
 ```
 
 ## Step 4:  Make changes on local computer 
 
 ### Let's make a change on local computer and push changes up to GitHub
-Use an editor of your choice to create a python file which will print your name.  
+Type `Spyder` to launch the Spyder editor and create a new python file which will print your name.  
+
 My file `print_name.py` contains the following line of code:  
 ```python
-print("My name is Reshama")
-```
-
-```bash
-~/git_work/starting_git  master ✔                                                   11m  
-▶ emacs print_name.py
-
-~/git_work/starting_git  master ✗                                                 11m ◒  
-▶ python print_name.py 
-Hello, my name is Reshama
-
-~/git_work/starting_git  master ✗                                                 12m ◒  
-▶ 
+print("My name is Anastasia")
 ```
 
 ### We made a change!  How does git track it?
 To see what changes have been made since last `git pull`, type `git status`  
 ```bash
-▶ git status
+Anastasias-MBP:git_intro anastasiaclark$  git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Untracked files:
@@ -119,8 +91,7 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-~/git_work/starting_git  master ✗                                                 14m ◒  
-▶ 
+Anastasias-MBP:git_intro anastasiaclark$  
 ```
 ---
 

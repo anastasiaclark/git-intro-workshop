@@ -21,7 +21,8 @@ task:  end changes from local computer to GitHub repo (sync repos)
 This sets a file for staging:  
  
 >my example  
-```Anastasias-MBP:git_intro anastasiaclark$ git add print_name.py
+```bash
+Anastasias-MBP:git_intro anastasiaclark$ git add print_name.py
 ```
 check the status
 ```git

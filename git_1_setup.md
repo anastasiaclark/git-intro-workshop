@@ -12,4 +12,4 @@
 * go into this directory:  `cd git_intro`
 
 For me, it is:   
-`/Users/anastasiaclark/git_work`  
+`/Users/anastasiaclark/git_work/git_intro`  

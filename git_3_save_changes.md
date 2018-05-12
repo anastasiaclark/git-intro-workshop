@@ -13,7 +13,6 @@ task:  end changes from local computer to GitHub repo (sync repos)
 ## Git Flow Analogy
 ![git flow](images/git_diagram.png)
 
-
 ---
 
 ## Git:  add, commit and push a file
@@ -23,15 +22,11 @@ This sets a file for staging:
 `git add print_name.py`  
 
 >my example  
+```Anastasias-MBP:git_intro anastasiaclark$ git add print_name.py
 ```
-~/git_work/starting_git  master ✗                                                 14m ◒  
-▶ git add print_name.py
-```
-
-
-
+check the status
 ```git
-▶ git status
+Anastasias-MBP:git_intro anastasiaclark$ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Changes to be committed:
@@ -39,53 +34,29 @@ Changes to be committed:
 
 	new file:   print_name.py
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	print_name.py~
-
-
-~/git_work/starting_git  master ✗                                               17m ✚ ◒  
-▶ 
+Anastasias-MBP:git_intro anastasiaclark$                                         
 ```
 
 ### `git commit -m 'message'`
-
-```bash
-▶ git commit -m 'adding file that prints my name'
-[master bfefcd3] adding file that prints my name
- 1 file changed, 1 insertion(+)
+>my example  
+```Anastasias-MBP:git_intro anastasiaclark$ git commit -m 'created print.py'
+[master 70e2190] created print.py
+ 1 file changed, 9 insertions(+)
  create mode 100644 print_name.py
-
-~/git_work/starting_git  master ✗                                                  0m ◒  
-▶ git status
-On branch master
-Your branch is ahead of 'origin/master' by 1 commit.
-  (use "git push" to publish your local commits)
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	print_name.py~
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-~/git_work/starting_git  master ✗                                                  0m ◒  
-▶ 
+Anastasias-MBP:git_intro anastasiaclark$
 ```
 
 ### `git push` (push changes up to GitHub browser)
 
-```bash
-▶ git push
+```Anastasias-MBP:git_intro anastasiaclark$ git push
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 316 bytes | 0 bytes/s, done.
-Total 3 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
-To https://github.com/reshama/starting_git.git
-   2a119c3..bfefcd3  master -> master
-
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 455 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/anastasiaclark/git_intro.git
+   6614a6b..70e2190  master -> master
+Anastasias-MBP:git_intro anastasiaclark$
 ```
 
 Voila! Check out your forked repo on the browser and the `print_name.py` file should be there!

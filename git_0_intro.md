@@ -31,6 +31,8 @@ Version control systems are a category of software tools that help a software te
 * **Collaborate** — programming is a team sport
 	* *Track steps* — What happened while you were sleeping
 	* *Branching and merging* — Work in parallel and bring it back together
+* **Reproduce**
+	* *Reproducibility* - For scientists, it is important that others can reproduce each step in their project and obtain the identical results. It gives their projects credibility. 
 	
 
 ## Remotes 

@@ -21,7 +21,7 @@ task:  end changes from local computer to GitHub repo (sync repos)
 This sets a file for staging:  
  
 >my example  
-```bash
+```git
 Anastasias-MBP:git_intro anastasiaclark$ git add print_name.py
 ```
 check the status
@@ -39,7 +39,8 @@ Anastasias-MBP:git_intro anastasiaclark$
 
 ### `git commit -m 'message'`
 >my example  
-```Anastasias-MBP:git_intro anastasiaclark$ git commit -m 'created print.py'
+```git
+Anastasias-MBP:git_intro anastasiaclark$ git commit -m 'created print.py'
 [master 70e2190] created print.py
  1 file changed, 9 insertions(+)
  create mode 100644 print_name.py
@@ -48,7 +49,8 @@ Anastasias-MBP:git_intro anastasiaclark$
 
 ### `git push` (push changes up to GitHub browser)
 
-```Anastasias-MBP:git_intro anastasiaclark$ git push
+```git
+Anastasias-MBP:git_intro anastasiaclark$ git push
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.

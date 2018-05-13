@@ -33,8 +33,7 @@ Unpacking objects: 100% (3/3), done.
 ```bash
 Anastasias-MBP:~ anastasiaclark$ cd GEP662_repo/
 Anastasias-MBP:GEP662_repo anastasiaclark$ ls
-README.md
-Anastasias-MBP:GEP662_repo anastasiaclark$
+README.md	myfile.py
 ```
 
 #### List remotes

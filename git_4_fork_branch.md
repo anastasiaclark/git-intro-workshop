@@ -42,3 +42,7 @@ origin	https://github.com/anastasiaclark/GEP662_repo.git (fetch)
 origin	https://github.com/anastasiaclark/GEP662_repo.git (push)
 Anastasias-MBP:GEP662_repo anastasiaclark$
 ```
+
+## Let's collaborate!
+Open myfile.py, add few lines of code and save it. 
+Do `git add`, `git commit`, `git push`, and the the rest of us will `git pull` to get changes you made syncronized with our local copies. 

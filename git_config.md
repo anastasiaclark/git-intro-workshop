@@ -31,7 +31,7 @@ Mac:
 ### Global Configuration File
 #### Edit config file
 ```bash
-nano /Users/reshamashaikh/.gitconfig
+nano /Users/anastasiaclark/.gitconfig
 ```
 
 >my example  
@@ -43,12 +43,12 @@ nano /Users/reshamashaikh/.gitconfig
         clean = git media clean %f
         smudge = git media smudge %f
 [user]
-        name = reshamas
-        email = rs2715@gmail.com
-        password = 123456789
-[reshama]
-        name = reshamas
-        email = rs2715@stern.nyu.edu
+        name = anastasiaclark
+        email = anastasiapotupalova@gmail.com
+        password = mypassword
+[anastasiaclark]
+        name = anastasiaclark
+        email = anastasiapotupalova@gmail.com
 [push]
         default = simple
 [core]

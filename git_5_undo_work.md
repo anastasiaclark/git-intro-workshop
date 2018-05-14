@@ -52,11 +52,24 @@ Anastasias-MBP:GEP662_repo anastasiaclark$
 git reset HEAD <file>       
 ```
 
-Create a file called test.py with a single line 
+## How to undo a commit 
+On the commit-level, resetting is a way to move the tip of a branch to a different commit. This can be used to remove commits from the current branch. For example, the following command moves the current branch backwards by two commits.
+
+```console
+git reset --soft HEAD^     # use --soft if you want to keep your changes
+git reset --hard HEAD^     # use --hard if you don't care about keeping the changes you made
+```
+
+```
+git reset --soft HEAD~1    # use --soft to preserve changes that were made and undo last commit (~1 = back 1 commit)
+```
+
+## Practice
+1. Create a file called test.py with a single line 
 ```python
 print('This is just a test')
 ```
-add the file, but don't commit it yet. Check the status
+2. add the file, but don't commit it yet. Check the status
 
 > my example
 ```git
@@ -70,13 +83,13 @@ Changes to be committed:
 
 Anastasias-MBP:GEP662_repo anastasiaclark$
 ```
-Now, let's unstage the file
+3. Now, let's unstage the file
 
 >my example
 ```git
 Anastasias-MBP:GEP662_repo anastasiaclark$ git reset HEAD test.py  
 ```
-Check the status again
+4. Check the status again
 
 ```Anastasias-MBP:GEP662_repo anastasiaclark$ git status
 On branch master
@@ -89,19 +102,116 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 Anastasias-MBP:GEP662_repo anastasiaclark$
 ```
+5. Let's add the test.py to staging again. Then let's open the test.py add a line to it, commit the changes and push it to our remote repo.
+
+What if the last change we made turned out to be wrong?! We can look at the history of our commits, find the tag of the commit when everything was still alright and set out working directory back to that point in time.
+
+## git log-- to check the history
+
+6. Check the histoty and find a safe point (where we haven't added that wrong line)
+>my example
+```Anastasias-MBP:GEP662_repo anastasiaclark$ git log
+commit 10c4badaa054b6b22f09027335c3c128990a0d7b
+Author: anastasiaclark <anastasiapotupalova@gmail.com>
+Date:   Mon May 14 08:51:10 2018 -0400
+
+    added line to test.py
+
+commit 94f794c460e123f1d902e4b2b6382ae3d8f779e9
+Author: anastasiaclark <anastasiapotupalova@gmail.com>
+Date:   Mon May 14 08:49:36 2018 -0400
+
+    added test.py
+
+commit e0c2eb23f8fe760c7b1847df29f8b28d8ae22104
+Author: anastasiaclark <anastasiapotupalova@gmail.com>
+Date:   Sun May 13 12:46:03 2018 -0400
+
+    created myfile.py
+
+commit d71fc91471339fd5dd2d80e73d332cc9d3b3d93f
+Author: Anastasia Clark <anastasiapotupalova@gmail.com>
+Date:   Sun May 13 12:08:34 2018 -0400
+
+    Initial commit
+:...skipping...
+commit 10c4badaa054b6b22f09027335c3c128990a0d7b
+Author: anastasiaclark <anastasiapotupalova@gmail.com>
+Date:   Mon May 14 08:51:10 2018 -0400
+
+    added line to test.py
+
+commit 94f794c460e123f1d902e4b2b6382ae3d8f779e9
+Author: anastasiaclark <anastasiapotupalova@gmail.com>
+Date:   Mon May 14 08:49:36 2018 -0400
+
+    added test.py
+
+commit e0c2eb23f8fe760c7b1847df29f8b28d8ae22104
+Author: anastasiaclark <anastasiapotupalova@gmail.com>
+Date:   Sun May 13 12:46:03 2018 -0400
+
+    created myfile.py
+
+commit d71fc91471339fd5dd2d80e73d332cc9d3b3d93f
+Author: Anastasia Clark <anastasiapotupalova@gmail.com>
+Date:   Sun May 13 12:08:34 2018 -0400
+
+    Initial commit
+~
+```
 
 
-## How to undo a commit
-On the commit-level, resetting is a way to move the tip of a branch to a different commit. This can be used to remove commits from the current branch. For example, the following command moves the current branch backwards by two commits.
+The tag of the commit i want to come back to is `94f794c460e123f1d902e4b2b6382ae3d8f779e9`
+
+7. Use git checkout to bring the snapshot from that commit
+
+```Anastasias-MBP:GEP662_repo anastasiaclark$ git checkout 94f794c460e123f1d902e4b2b6382ae3d8f779e9
+Note: checking out '10c4badaa054b6b22f09027335c3c128990a0d7b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 94f794c... added test.py
+Anastasias-MBP:GEP662_repo anastasiaclark$ 
+```
+
+Open test.py and loock at it. The line is not there.
+
+Now, we have an option to create a new branch here and keep on working on this script untill we fix the bugs.
+
+8. Create a new branch
 
 ```console
-git reset --soft HEAD^     # use --soft if you want to keep your changes
-git reset --hard HEAD^     # use --hard if you don't care about keeping the changes you made
+Anastasias-MBP:GEP662_repo anastasiaclark$ git checkout -b test_branch
+Switched to a new branch 'test_branch'
+```
+The old state is still on master
+
+```console
+Anastasias-MBP:GEP662_repo anastasiaclark$ git checkout master
+Switched to branch 'master'
+```
+Open the test.py, and the line is there again
+
+Ok, let's say we done working on the branch and we want to merge the work from that branch into the master
+
+9. Merge the branches
+```console
+Anastasias-MBP:GEP662_repo anastasiaclark$ git merge master
+Updating 94f794c..10c4bad
+Fast-forward
+ test.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+Anastasias-MBP:GEP662_repo anastasiaclark$
 ```
 
-```
-git reset --soft HEAD~1    # use --soft to preserve changes that were made and undo last commit (~1 = back 1 commit)
-```
 
 #### Syntax for Windows Users
 Note:  use `~` instead of `^`  

@@ -31,46 +31,68 @@ git log -2
 
 >my example  
 
-```
-reshama$ git log -2
-commit a3334f177bed83528f5ab3883d87f1336f599f49
-Author: reshama <rs2715@gmail.com>
-Date:   Tue May 24 11:04:52 2016 -0400
+```git
+Anastasias-MBP:GEP662_repo anastasiaclark$ git log
+commit e0c2eb23f8fe760c7b1847df29f8b28d8ae22104
+Author: anastasiaclark <anastasiapotupalova@gmail.com>
+Date:   Sun May 13 12:46:03 2018 -0400
 
-    adding test file 4
+    created myfile.py
 
-commit 12dc41f2620118977c17ad21dfc4b504191e170e
-Author: reshama <rs2715@gmail.com>
-Date:   Tue May 24 11:04:06 2016 -0400
+commit d71fc91471339fd5dd2d80e73d332cc9d3b3d93f
+Author: Anastasia Clark <anastasiapotupalova@gmail.com>
+Date:   Sun May 13 12:08:34 2018 -0400
 
-    adding test3 file
-reshama$ 
+    Initial commit
+Anastasias-MBP:GEP662_repo anastasiaclark$
 ```  
 
 ## How to undo an add (undo a staged file)
-```
+```git
 git reset HEAD <file>       
 ```
- 
-## Discard uncommitted changes to a file
-Situation:  you've changed a file, but not yet committed the changes  
- 
-```bash
-git checkout README
+
+Create a file called test.py with a single line 
+```python
+print('This is just a test')
+```
+add the file, but don't commit it yet. Check the status
+
+> my example
+```git
+Anastasias-MBP:GEP662_repo anastasiaclark$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   test.py
+
+Anastasias-MBP:GEP662_repo anastasiaclark$
+```
+Now, let's unstage the file
+
+>my example
+```git
+Anastasias-MBP:GEP662_repo anastasiaclark$ git reset HEAD test.py  
+```
+Check the status again
+
+```Anastasias-MBP:GEP662_repo anastasiaclark$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+Anastasias-MBP:GEP662_repo anastasiaclark$
 ```
 
-## Revert Commit
-**Reverting undoes a commit by creating a new commit. This is a safe way to undo changes, as it has no chance of re-writing the commit history.** For example, the following command will figure out the changes contained in the 2nd to last commit, create a new commit undoing those changes, and tack the new commit onto the existing project.  
-```bash
-git checkout branch_name
-git log -4
-git revert HEAD~2
-``` 
- 
----
 
 ## How to undo a commit
-On the commit-level, resetting is a way to move the tip of a branch to a different commit. This can be used to remove commits from the current branch. For example, the following command moves the hotfix branch backwards by two commits.
+On the commit-level, resetting is a way to move the tip of a branch to a different commit. This can be used to remove commits from the current branch. For example, the following command moves the current branch backwards by two commits.
 
 ```console
 git reset --soft HEAD^     # use --soft if you want to keep your changes

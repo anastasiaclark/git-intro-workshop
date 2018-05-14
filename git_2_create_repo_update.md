@@ -28,7 +28,7 @@ For me, it is:
 `https://github.com/anastasiaclark/git_intro`  
 
 #### Clone repo
-`git clone https://github.com/reshamas/starting_git.git`  
+`git clone https://github.com/anastasiaclark/git_intro.git`  
 
 >my example  
 ```                                                               ◒  
@@ -99,10 +99,7 @@ Anastasias-MBP:git_intro anastasiaclark$
 ## Let's delete (`git rm`) and rename (`git mv`) some files
 - do examples
   
-
 ## Add collaborators (if you would like to share)
 
 - Settings / Collaborators
 - add GitHub username
-
-

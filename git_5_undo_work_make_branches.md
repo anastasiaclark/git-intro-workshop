@@ -102,7 +102,7 @@ Anastasias-MBP:GEP662_repo anastasiaclark$
 ```
 ### 5. Let's add the test.py to staging again. Then let's open the test.py add a line to it, commit the changes and push it to our remote repo.
 
-What if the last change we made turned out to be wrong?! We can look at the history of our commits, find the tag of the commit when everything was still alright and set out working directory back to that point in time.
+What if the last change we made turned out to be wrong?! We can look at the history of our commits, find the tag of the commit when everything was still alright and set our working directory back to that point in time.
 
  git log-- to check the history
 

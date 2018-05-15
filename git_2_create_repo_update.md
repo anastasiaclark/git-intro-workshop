@@ -71,7 +71,7 @@ Already up-to-date.
 ## Step 4:  Make changes on local computer 
 
 ### Let's make a change on local computer and push changes up to GitHub
-Type `Spyder` to launch the Spyder editor and create a new python file which will print your name.  
+Open new command line/terminal and type `Spyder` to launch the Spyder editor (or use nano or any other edittor) and create a new python file which will print your name.  
 
 My file `print_name.py` contains the following line of code:  
 ```python

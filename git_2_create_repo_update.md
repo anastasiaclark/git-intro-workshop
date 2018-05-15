@@ -31,8 +31,8 @@ For me, it is:
 `git clone https://github.com/anastasiaclark/git_intro.git`  
 
 >my example  
-```                                                               ◒  
-▶ Cloning into 'git_intro'...
+```console                                                            
+Cloning into 'git_intro'...
 remote: Counting objects: 3, done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
@@ -40,11 +40,11 @@ Anastasias-MBP:~ anastasiaclark$
 ```
 
 ### `cd` into cloned repo
-```bash
+```console
 Anastasias-MBP:git_intro anastasiaclark$ cd git_intro/
 Anastasias-MBP:git_intro anastasiaclark$```
 
-```bash
+```console
 Anastasias-MBP:git_intro anastasiaclark$ ls 
 README.md	holiday.md
 Anastasias-MBP:git_intro anastasiaclark$ 
@@ -56,14 +56,14 @@ Note:
 - notice you have push and pull access  
 
 >my example  
-```bash
+```console
 Anastasias-MBP:git_intro anastasiaclark$  git remote -v
 origin	https://github.com/anastasiaclark/git_intro.git (fetch)
 origin	https://github.com/anastasiaclark/git_intro.git (push)
 ```
 
 ### We can 'pull' updates from GitHub version
-```bash
+```console
 Anastasias-MBP:git_intro anastasiaclark$  git pull
 Already up-to-date.
 ```
@@ -80,7 +80,7 @@ print("My name is Anastasia")
 
 ### We made a change!  How does git track it?
 To see what changes have been made since last `git pull`, type `git status`  
-```bash
+```console
 Anastasias-MBP:git_intro anastasiaclark$  git status
 On branch master
 Your branch is up-to-date with 'origin/master'.

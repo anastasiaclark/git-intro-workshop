@@ -21,11 +21,11 @@ task:  add changes from local computer to GitHub repo (sync repos)
 This sets a file for staging:  
  
 >my example  
-```git
+```console
 Anastasias-MBP:git_intro anastasiaclark$ git add print_name.py
 ```
 check the status
-```git
+```console
 Anastasias-MBP:git_intro anastasiaclark$ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
@@ -39,7 +39,7 @@ Anastasias-MBP:git_intro anastasiaclark$
 
 ### `git commit -m 'message'`
 >my example  
-```git
+```console
 Anastasias-MBP:git_intro anastasiaclark$ git commit -m 'created print.py'
 [master 70e2190] created print.py
  1 file changed, 9 insertions(+)
@@ -49,7 +49,7 @@ Anastasias-MBP:git_intro anastasiaclark$
 
 ### `git push` (push changes up to GitHub browser)
 
-```git
+```console
 Anastasias-MBP:git_intro anastasiaclark$ git push
 Counting objects: 3, done.
 Delta compression using up to 4 threads.

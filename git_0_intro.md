@@ -10,14 +10,14 @@ Check out his Ted Talk:  [The Mind Behind Linux](https://www.ted.com/talks/linus
 >Linus Torvalds transformed technology twice -- first with the Linux kernel, which helps power the Internet, and again with Git, the source code management system used by developers worldwide. In a rare interview with TED Curator Chris Anderson, Torvalds discusses with remarkable openness the personality traits that prompted his unique philosophy of work, engineering and life. "I am not a visionary, I'm an engineer," Torvalds says. "I'm perfectly happy with all the people who are walking around and just staring at the clouds ... but I'm looking at the ground, and I want to fix the pothole that's right in front of me before I fall in."
 
 ## GitHub    --[browser]
-**GitHub** is an online facility where projects are made available for others to access and make contributions. Projects are maintained and managed in **repositories**. Github allows you to have a backup of your files *away* fom your local machine in these repositories. It has a visual interface to navigate your repositories, and it allows other people to be able to view your them. Peolpe often refer to the repositories as **repos**. 
+**GitHub** is an online facility where projects are made available for others to access and make contributions. Projects are maintained and managed in **repositories**. Github allows you to have a backup of your files *away* fom your local machine in these repositories. It has a visual interface to navigate your repositories, and it allows other people to be able to view them. People often refer to the repositories as **repos**. 
 
-In addition, Github includes some very nice tools for software projects, like Markdown rendering, issue tracker and wiki tools, and the ability to “fork” a project to make your own independent copy of it for development. This repository is indeed, a fork from https://github.com/reshama/git-intro-workshop5-pyladies, which I slightly modified ror the purpose of my class.
+In addition, Github includes some very nice tools for software projects, like Markdown rendering, issue tracker and wiki tools, and the ability to “fork” a project to make your own independent copy of it for development. This repository, for example, is indeed a fork from https://github.com/reshama/git-intro-workshop5-pyladies, which I slightly modified ror the purpose of my class.
 
-GitHub is also social. 
+GitHub is also *social*. 
 Just like a social networking site, individuals who participate on GitHub have profiles that share details about who they are. Github users can **watch** repositories, follow other users’ activities, and interact with their peers. 
 
-Github is a hub for open source development and you too as a github user can contribute to an open source project by opening an  **issue** if you encounter a bug in a software. 
+Github is a hub for open source development and you too as a github user can contribute to an open source project by opening an  **issue** if you encounter a bug in a software or submitting a **pull request**. 
 
 Check out this TechCrunch article:  [What Exactly is GitHub Anyway?](https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
 
@@ -48,5 +48,3 @@ Branching means you diverge from the main line of development and continue to do
 
 ## Account settings
 - review account options
-
- 

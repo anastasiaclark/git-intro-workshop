@@ -17,7 +17,7 @@
 
 ## Log of Commits
 #### View log of Git
-```bash
+```console
 git log
 
 # view formatted log
@@ -25,13 +25,13 @@ git log --pretty=format:"%h : %an : %ar : %s" -3
 ```
 
 #### View last 2 commits
-```bash
+```console
 git log -2
 ```  
 
 >my example  
 
-```git
+```console
 Anastasias-MBP:GEP662_repo anastasiaclark$ git log
 commit e0c2eb23f8fe760c7b1847df29f8b28d8ae22104
 Author: anastasiaclark <anastasiapotupalova@gmail.com>
@@ -48,7 +48,7 @@ Anastasias-MBP:GEP662_repo anastasiaclark$
 ```  
 
 ## How to undo an add (undo a staged file)
-```git
+```console
 git reset HEAD <file>       
 ```
 
@@ -58,9 +58,6 @@ On the commit-level, resetting is a way to move the tip of a branch to a differe
 ```console
 git reset --soft HEAD^     # use --soft if you want to keep your changes
 git reset --hard HEAD^     # use --hard if you don't care about keeping the changes you made
-```
-
-```
 git reset --soft HEAD~1    # use --soft to preserve changes that were made and undo last commit (~1 = back 1 commit)
 ```
 
@@ -72,7 +69,7 @@ print('This is just a test')
 ### 2. add the file, but don't commit it yet. Check the status
 
 > my example
-```git
+```console
 Anastasias-MBP:GEP662_repo anastasiaclark$ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
@@ -86,12 +83,13 @@ Anastasias-MBP:GEP662_repo anastasiaclark$
 ### 3. Now, let's unstage the file
 
 >my example
-```git
+```console
 Anastasias-MBP:GEP662_repo anastasiaclark$ git reset HEAD test.py  
 ```
 ### 4. Check the status again, notice that the test.py is now untracked
 
-```Anastasias-MBP:GEP662_repo anastasiaclark$ git status
+```console
+Anastasias-MBP:GEP662_repo anastasiaclark$ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 Untracked files:
@@ -110,7 +108,8 @@ What if the last change we made turned out to be wrong?! We can look at the hist
 
 ### 6. Check the histoty (git log) and find a safe point (where we haven't added that wrong line)
 >my example
-```Anastasias-MBP:GEP662_repo anastasiaclark$ git log
+```console
+Anastasias-MBP:GEP662_repo anastasiaclark$ git log
 commit 10c4badaa054b6b22f09027335c3c128990a0d7b
 Author: anastasiaclark <anastasiapotupalova@gmail.com>
 Date:   Mon May 14 08:51:10 2018 -0400
@@ -165,7 +164,8 @@ The tag of the commit i want to come back to is `94f794c460e123f1d902e4b2b6382ae
 
 ### 7. Use git checkout to bring the snapshot from that commit
 
-```Anastasias-MBP:GEP662_repo anastasiaclark$ git checkout 94f794c460e123f1d902e4b2b6382ae3d8f779e9
+```console
+Anastasias-MBP:GEP662_repo anastasiaclark$ git checkout 94f794c460e123f1d902e4b2b6382ae3d8f779e9
 Note: checking out '10c4badaa054b6b22f09027335c3c128990a0d7b'.
 
 You are in 'detached HEAD' state. You can look around, make experimental

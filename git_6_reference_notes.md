@@ -71,16 +71,16 @@ Why use branches?
  * **List branches**  
     `$ git branch`
  * **Create a new branch**  
-    `$ git branch reshama_wip`
+    `$ git branch wip`
  * **Navigate between branches**  
     `$ git checkout branchname`
  * **Create and switch to branch** (2 steps in 1 line)  
     `$ git checkout -b testbranch`
 
  * **Delete a branch** (safe delete; won't delete if there are unmerged changes)  
-    `$ git branch -d reshama_wip`
+    `$ git branch -d wip`
  * **Delete a branch** (force delete; will delete even if branch has unmerged changes)  
-    `$ git branch -D reshama_wip`
+    `$ git branch -D wip`
 
 
  * **Rename a branch** (whichever is the current one, be careful)  

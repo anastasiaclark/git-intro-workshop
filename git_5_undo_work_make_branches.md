@@ -211,7 +211,18 @@ Fast-forward
 Anastasias-MBP:GEP662_repo anastasiaclark$
 ```
 
+### 10. Delete unneeded branch
+Finally, if you no longer need the branch you used for development, you can delete it after the merge.
+Switch back to master and then delete the test_branch
 
+```console
+Anastasias-MBP:GEP662_repo anastasiaclark$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+Anastasias-MBP:GEP662_repo anastasiaclark$ git branch -d test_branch
+Deleted branch test_branch (was 10c4bad).
+Anastasias-MBP:GEP662_repo anastasiaclark$
+```
 
 
 #### Syntax for Windows Users

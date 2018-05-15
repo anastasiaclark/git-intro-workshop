@@ -21,7 +21,7 @@ In terminal:
 * clone repo:   `git clone <url goes here>`
 
 >my example
- ```bash
+ ```console
  Anastasias-MBP:~ anastasiaclark$ git clone https://github.com/anastasiaclark/GEP662_repo.git
 Cloning into 'GEP662_repo'...
 remote: Counting objects: 3, done.
@@ -30,14 +30,14 @@ Unpacking objects: 100% (3/3), done.
 ```
 * `cd` into cloned repo and check it's content with `ls`
 
-```bash
+```console
 Anastasias-MBP:~ anastasiaclark$ cd GEP662_repo/
 Anastasias-MBP:GEP662_repo anastasiaclark$ ls
 README.md	myfile.py
 ```
 
 #### List remotes
-```bash
+```console
 origin	https://github.com/anastasiaclark/GEP662_repo.git (fetch)
 origin	https://github.com/anastasiaclark/GEP662_repo.git (push)
 Anastasias-MBP:GEP662_repo anastasiaclark$

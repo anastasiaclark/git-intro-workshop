@@ -62,3 +62,14 @@ Anastasias-MBP:git_intro anastasiaclark$
 ```
 
 Voila! Check out your forked repo on the browser and the `print_name.py` file should be there!
+
+---
+
+## Extra
+## Let's delete (`git rm`) and rename (`git mv`) some files
+- do examples
+  
+## Add collaborators (if you would like to share)
+
+- Settings / Collaborators
+- add GitHub username

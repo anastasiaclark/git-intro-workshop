@@ -40,7 +40,7 @@ Anastasias-MBP:git_intro anastasiaclark$
 ### `git commit -m 'message'`
 >my example  
 ```console
-Anastasias-MBP:git_intro anastasiaclark$ git commit -m 'created print.py'
+Anastasias-MBP:git_intro anastasiaclark$ git commit -m 'created print_name.py'
 [master 70e2190] created print.py
  1 file changed, 9 insertions(+)
  create mode 100644 print_name.py
